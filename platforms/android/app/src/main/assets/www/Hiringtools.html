@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+   
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/hired_tool_app.js"></script>
+  
+	<style>
+		.wrapper {
+			text-align: center;
+		}
+		
+		img {
+			margin-left: auto;
+			margin-right: auto;
+			width: 45%;
+		}
+		
+		.alignLeft{
+			position:absolute;
+			left: 12%;
+		}
+		
+		.alignRight{
+			position:absolute;
+			left: 60%;
+		}
+	</style>
+
+    <title>HANDYMAN MOBILE</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <!-- Fixed navbar -->
+      <nav id="navigation" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;Hiring Tools</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="Services.html"><i class="fa fa-gears"></i>&nbsp;&nbsp;&nbsp;&nbsp;Services</a></li>
+		  <li class="nav-item"><a class="nav-link" href="My Profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a></li>
+
+          </ul>
+         
+        </div>
+      </nav>
+
+	<div class="wrapper">
+	
+		<div class="card-body">
+				<div class="input-group form-group">
+				<div class="input-group-prepend">
+				<span class="input-group-text"><i class="fas fa-calendar"><b> Start Date:</b></i></span>
+				</div>
+				<input type="date" name="bday" id="startdate">
+				</div>
+					   
+			<div class="input-group form-group">
+				<div class="input-group-prepend">
+				<span class="input-group-text"><i class="fas fa-calendar"><b> End Date:</b></i></span>
+				</div>
+				<input type="date" name="bday" id="enddate">
+			</div>
+			
+			<div style="text-align:left">
+			<b>
+			Choose delivery option:
+			</b>
+			<form action="">
+			<input type="radio" name="option" value="Pick Up"> Pick up<br>
+			<input type="radio" name="option" value="Free Delivery"> Free courier delivery<br>			
+			</form><br>
+
+			
+			<div class="input-group form-group">
+			<div class="input-group-prepend">
+			<span class="input-group-text"><i class="fas fa-location-arrow"></i></span>
+			</div>
+			<input type="text" class="form-control" id="Postcode" placeholder="Postcode" required> 
+			</div>
+			</div>
+
+			<div style="text-align:center">
+			<button type="button" class="btn btn-success" id="hire_tool_now">Hire now</button>
+			</div>
+
+	</div>
+</body>
+</html>

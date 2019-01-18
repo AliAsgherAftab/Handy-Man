@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	 
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/services_app.js"></script>
+	  
+	  
+	<style>
+		.wrapper {
+			text-align: center;
+		}
+		
+		img {
+			margin-left: auto;
+			margin-right: auto;
+			width: 45%;
+		}
+		
+		.alignLeft{
+			position:absolute;
+			left: 16%;
+		}
+		
+		.alignRight{
+			position:absolute;
+			left: 66%;
+		}
+		</style>	
+
+    <title>HANDYMAN MOBILE</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+      <!-- Fixed navbar -->
+      <nav id="navigation" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa fa-gears"></i>&nbsp;&nbsp;Book Service</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+		
+		
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+		  <li class="nav-item"><a class="nav-link" href="Services.html"><i class="fa fa-gears"></i>&nbsp;&nbsp;&nbsp;&nbsp;Services</a></li>
+		  <li class="nav-item"><a class="nav-link" href="Tools.html"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hire Tools</a></li>	
+          <li class="nav-item"><a class="nav-link" href="My Profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Profile</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a></li>
+          </ul>
+          
+        </div>
+		
+      </nav>
+	  
+	  
+      <div class="wrapper">
+			<div class="card-body">
+			<div style="text-align:left">
+			 <b><u>Note</u>: You can always give us a quick call on <a href="tel:+02034345050"><u>020 3434 5050</u></a>
+				and talk to our friendly customer care staff. They will be happy
+				to answer all your questions. In addition, you can also send us 
+				the picture of your problem to be fixed.</b>
+			</div>
+			<div style="text-align:right">
+					<a href="tel:+02034345050"><button type="button" class="btn btn-success"><i class="fas fa-phone-square"></i> Call Now</button></a>
+					</div>
+			</div>
+
+		<div class="card-body">
+			<div class="input-group form-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text"><i class="fas fa-location-arrow"></i></span>
+				</div>
+				<input type="text" class="form-control" id="Postcode" placeholder="Postcode" required> 
+			</div>
+
+			<div class="input-group form-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text"><i class="fas fa-phone"></i></span>
+				</div>
+				<input type="text" class="form-control" id="Phonenumber" placeholder="Phone number" required>
+			</div>
+
+			<div style="text-align:left">
+			  
+			  <p><strong>Choose an option for when to call me:</strong></p>
+			   <select name="favorites" id="whenToCallOption"> 
+					<option selected value="0">Select one:</option>
+				   <option value="1">Anytime</option>
+					<option value="2">Call between 9am and 6pm</option>
+					 <option value="3">Call after 6pm</option>
+					   <option value="4">Call Midday between 12 and 2pm</option>
+					 </select>
+
+			  <br><br>
+			<form>
+			<b>Select a file:</b><i> (Optional)</i><input type="file" name="myFile" id="imageFIle" accept="image/*"><br><br>			
+			</form>
+			
+			<div style="text-align:center"> 
+			<b>Any additional comments? Please add them below:</b><i> (Optional)</i>
+			<textarea style="width: 100%; height: 150px;" name="comment" id="comment" form="usrform" placeholder=" Enter your comments"></textarea>
+			</div>
+		<br>
+			<div style="text-align:center">
+			<button type="button" class="btn btn-success" id="service_request_submit">Submit Request</button>
+			</div>
+	</div>
+
+
+	
+     </div> 
+</body>
+</html>
