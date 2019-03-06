@@ -6,9 +6,10 @@
     <title>HANDYMAN MOBILE</title>
 	
     <meta charset="utf-8" />
+    <!-- Using the viewport meta tag to control layout on mobile browsers -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -19,7 +20,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-      <!-- Fixed navbar -->
+      
+      <!-- Navigation bar -->
       <nav id="navigation" class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;Contact Us</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,23 +30,23 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="Services.html"><i class="fa fa-gears"></i>&nbsp;&nbsp;&nbsp;&nbsp;Services</a></li>
-		  <li class="nav-item"><a class="nav-link" href="Tools.html"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hire Tools</a></li>
-		  <li class="nav-item"><a class="nav-link" href="My Profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Profile</a></li>
+		      <li class="nav-item"><a class="nav-link" href="Tools.html"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hire Tools</a></li>
+		      <li class="nav-item"><a class="nav-link" href="My Profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Profile</a></li>
           <li class="nav-item"><a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>        
-          </ul>
-          
+          </ul>          
         </div>
       </nav>
+
       <div class="wrapper">
       
+        <!--Message textbox -->
       <div style="text-align:center">
       <textarea style="width: 90%; height: 150px;" name="comment" form="usrform" id="contact_message" placeholder=" Enter your message here..."></textarea>
     </div>
 
-      
+      <!-- Submit button -->
       <div style="text-align:center">
       <button type="button" class="btn btn-success" id="contact_us_submit">Submit</button>
-
     </div>
     </div>
   </body>

@@ -63,13 +63,18 @@ $(document).ready(function()
 		postcode = postcode.trim();
 		postcode = postcode.toUpperCase();
 
+		var date1 = new Date(startdate);
+		var date2 = new Date(enddate);
+		var timeDifference = Math.abs(date2.getTime() - date1.getTime());
+		var differenceInDays = Math.ceil(timeDifference / (1000 * 3600 * 24)); 
+
 		if(!startdate == "" && !enddate == "" && !option == "" && !postcode == "")
 		{	
 			$.ajax({
 				url:'https://buildingourownapi.000webhostapp.com/api/hired_tools_api.php',
 				dataType: 'json',
 				type:'POST',
-				data: {'startdate':startdate, 'enddate':enddate, 'option':option, 'postcode':postcode},
+				data: {'startdate':startdate, 'enddate':enddate, 'option':option, 'postcode':postcode, 'differenceInDays':differenceInDays},
 				success: function ()
 				{
 					window.location.href="Payments.html";
@@ -80,7 +85,9 @@ $(document).ready(function()
 		{
 			alert("Please complete all sections");
 		}
-    });
+	
+	
+	});
 
 	
 

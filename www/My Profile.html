@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <!-- Using the viewport meta tag to control layout on mobile browsers -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
  
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
@@ -69,11 +70,9 @@
 		}
   </style>
   
-
-
 </head>
 <body>
-      <!-- Fixed navbar -->
+      <!-- Navigation bar -->
       <nav id="navigation" class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;My Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,13 +81,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="Services.html"><i class="fa fa-gears"></i>&nbsp;&nbsp;&nbsp;&nbsp;Services</a></li>
-		  <li class="nav-item"><a class="nav-link" href="Tools.html"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hire Tools</a></li>
+		      <li class="nav-item"><a class="nav-link" href="Tools.html"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hire Tools</a></li>
           <li class="nav-item"><a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
           <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a></li>
-          </ul>
-         
+          </ul>         
         </div>
       </nav>
+
       <div class="wrapper">
           <div class="card-body">
         <i class="fa fa-user-circle" style="font-size:140px;";></i>
@@ -146,7 +145,7 @@
                         <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>					
-                          <input type="password" class="form-control" id="new_password" placeholder="New Password">
+                        <input type="password" class="form-control" id="new_password" placeholder="New Password">
                         </div>
                       
                       
@@ -157,6 +156,7 @@
                         <input type="password" class="form-control" id="confirm_password" placeholder="Confirm New Password">
                         </div>
                       
+                        <!--Reset button -->
                       <div class="form-group">
                       <input type="submit" id="changePassword_reset" value="Reset" class="btn float-right login_btn">
                       </div>
@@ -165,16 +165,12 @@
                 </div>
               </div>
             </div>
-        </div>
-                  
+        </div>                 
                   <br>
-
+                <!-- Logout button -->
                   <div style="text-align:center">
-                      <button type="button" class="btn btn-success" id="signout"><i class="fa fa-sign-out"></i> Log Out</button>
-                      </div>
-                      
-            
-		
+                  <button type="button" class="btn btn-success" id="signout"><i class="fa fa-sign-out"></i> Log Out</button>
+                  </div>                 
       </div>
       </div>
 

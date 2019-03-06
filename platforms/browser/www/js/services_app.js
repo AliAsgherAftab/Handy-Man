@@ -10,8 +10,6 @@ function selectService (event)
 	var target = event.target;
 	var value = target.getAttribute('alt');
 
-	console.log("whatus");
-
 	$.ajax({
 		url:'https://buildingourownapi.000webhostapp.com/api/services_api.php',
 		dataType: 'json',

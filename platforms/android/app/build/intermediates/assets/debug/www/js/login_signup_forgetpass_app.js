@@ -6,6 +6,29 @@ $(document).ready(function() {
 	String.prototype.capitalize = function() {
 	return this.charAt(0).toUpperCase() + this.slice(1);
 	}
+
+
+
+	// -------------------------------------------------------------------------------------------------  \\
+    //  Sign In Automatically
+    // -------------------------------------------------------------------------------------------------  \\
+    $.ajax({
+        url:'https://buildingourownapi.000webhostapp.com/api/sign_in_automatically_api.php',
+        dataType: 'json',
+        type:'POST',
+        data: {'signInAutomatically':'signIn'},
+        success: function (data)
+        {
+            console.log(data.response);
+            if(data.response == "active")
+            {
+                window.location.href="./Services.html";
+            }
+        }
+    }) 
+
+
+
 	
 
 	// Registeration 

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-   
+   <!-- Using the viewport meta tag to control layout on mobile browsers -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
@@ -43,7 +43,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-      <!-- Fixed navbar -->
+
+      <!--Navigation bar-->
       <nav id="navigation" class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;Hiring Tools</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,39 +56,40 @@
 		  <li class="nav-item"><a class="nav-link" href="My Profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Profile</a></li>
           <li class="nav-item"><a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
           <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a></li>
-
-          </ul>
-         
+          </ul>        
         </div>
       </nav>
 
 	<div class="wrapper">
 	
 		<div class="card-body">
+
+				<!-- Start date -->
 				<div class="input-group form-group">
 				<div class="input-group-prepend">
 				<span class="input-group-text"><i class="fas fa-calendar"><b> Start Date:</b></i></span>
 				</div>
 				<input type="date" name="bday" id="startdate">
 				</div>
-					   
-			<div class="input-group form-group">
+				<!--End date  -->
+				<div class="input-group form-group">
 				<div class="input-group-prepend">
 				<span class="input-group-text"><i class="fas fa-calendar"><b> End Date:</b></i></span>
 				</div>
 				<input type="date" name="bday" id="enddate">
-			</div>
+				</div>
 			
 			<div style="text-align:left">
 			<b>
 			Choose delivery option:
 			</b>
+			<!--Radio button  -->
 			<form action="">
 			<input type="radio" name="option" value="Pick Up"> Pick up<br>
 			<input type="radio" name="option" value="Free Delivery"> Free courier delivery<br>			
 			</form><br>
 
-			
+			<!-- Postcode Input Field -->
 			<div class="input-group form-group">
 			<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fas fa-location-arrow"></i></span>
@@ -95,7 +97,7 @@
 			<input type="text" class="form-control" id="Postcode" placeholder="Postcode" required> 
 			</div>
 			</div>
-
+			<!-- Hire Button-->
 			<div style="text-align:center">
 			<button type="button" class="btn btn-success" id="hire_tool_now">Hire now</button>
 			</div>

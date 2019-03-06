@@ -26,12 +26,13 @@ if(isset($_POST['ToolValue'], $_POST['ToolPrice']))
 
 
 // Validation
-if(isset($_POST['startdate'], $_POST['enddate'], $_POST['option'], $_POST['postcode']))
+if(isset($_POST['startdate'], $_POST['enddate'], $_POST['option'], $_POST['postcode'], $_POST['differenceInDays']))
 {
 	$_SESSION["HiredToolStartDate"] = $_POST['startdate'];
 	$_SESSION["HiredToolEndDate"] = $_POST['enddate'];
 	$_SESSION["HiredToolOption"] = $_POST['option'];
 	$_SESSION["HiredToolPostCode"] = $_POST['postcode'];
+	$_SESSION["HiredToolDifferenceInDays"] = $_POST['differenceInDays'];
 }
 
 
@@ -40,7 +41,9 @@ if(isset($_POST['startdate'], $_POST['enddate'], $_POST['option'], $_POST['postc
 // Validation
 if(isset($_POST['status']) && $_POST['status'] == 'completed')
 {
-	completed($_SESSION["HiredTool"], $_SESSION["HiredToolPrice"], $_SESSION["HiredToolStartDate"], $_SESSION["HiredToolEndDate"],
+	$totalPrice = $_SESSION["HiredToolPrice"] * $_SESSION["HiredToolDifferenceInDays"];
+
+	completed($_SESSION["HiredTool"], $totalPrice, $_SESSION["HiredToolStartDate"], $_SESSION["HiredToolEndDate"],
 				$_SESSION["HiredToolOption"], $_SESSION["HiredToolPostCode"], $email);
 }
 else
@@ -62,7 +65,6 @@ function completed ($tool, $price, $startdate, $enddate, $option, $postcode, $em
 	{
 		$json['response'] = "Tool hired successfully";
 		echo json_encode($json);
-
 	} 
 	else 
 	{
